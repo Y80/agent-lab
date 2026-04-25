@@ -9,3 +9,7 @@
 ```bash
 uv run --with PyYAML python /Users/lcc/.codex/skills/.system/skill-creator/scripts/quick_validate.py <skill-dir>
 ```
+
+## Node.js 工具
+
+- npm 依赖管理工具优先使用 `pnpm`。
