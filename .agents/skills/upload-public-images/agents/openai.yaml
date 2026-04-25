@@ -1,0 +1,4 @@
+interface:
+  display_name: "Public Image Upload"
+  short_description: "Upload local images to public hosts"
+  default_prompt: "Use $upload-public-images to upload this local image and return a public URL."
