@@ -7,8 +7,12 @@
 - 校验 skill 时使用：
 
 ```bash
-uv run --with PyYAML python /Users/lcc/.codex/skills/.system/skill-creator/scripts/quick_validate.py <skill-dir>
+uv run --with PyYAML python ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py <skill-dir>
 ```
+
+## 路径书写
+
+- `AGENTS.md` 中所有用户目录路径使用 `~`，不要写成 `/Users/<name>` 形式。
 
 ## Node.js 工具
 
