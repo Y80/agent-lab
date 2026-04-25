@@ -33,7 +33,7 @@ ls -lh <image-path>
 Use the bundled script:
 
 ```bash
-.agents/skills/upload-public-images/scripts/upload-image.zsh uguu <image-path>
+skills/upload-public-images/scripts/upload-image.zsh uguu <image-path>
 ```
 
 Supported hosts:
@@ -46,4 +46,3 @@ bashupload
 ```
 
 For detailed commands, retention, caveats, and local test results, read [references/hosts.md](references/hosts.md).
-
