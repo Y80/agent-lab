@@ -1,0 +1,4 @@
+interface:
+  display_name: "Iconify Icons"
+  short_description: "Use Iconify icons across frontend projects"
+  default_prompt: "Use $iconify-icons to choose and implement Iconify icons in this frontend."
