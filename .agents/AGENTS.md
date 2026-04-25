@@ -7,11 +7,4 @@
 - npm 依赖管理工具优先使用 `pnpm`。
 - 用户目录路径使用 `~`，不要写成 `/Users/<name>`。
 - 把偏好和流程分开：短偏好放在 `AGENTS.md`，详细流程放到独立文档并按需引用。
-
-## 常用命令
-
-- 校验 skill 时使用：
-
-```bash
-uv run --with PyYAML python ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py <skill-dir>
-```
+- 当需要让大模型读取本地图片时，必须先使用 `$upload-public-images` 上传为公共图片 URL；不要直接发送本地路径、附件、`file://`、base64 或 data URI。
