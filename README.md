@@ -4,8 +4,9 @@
 
 它适合存放可以跨设备同步、可以版本化、可以被 Codex、opencode 等智能体复用的内容，例如：
 
-- 用户级智能体工作约定，如 [AGENTS.md](AGENTS.md)
-- 可复用的 Skills，如 [skills](skills)
+- 仓库维护指南，如 [AGENTS.md](AGENTS.md)
+- 用户级智能体工作约定，如 [.agents/AGENTS.md](.agents/AGENTS.md)
+- 可复用的 Skills，如 [.agents/skills](.agents/skills)
 - 按需引用的参考资料和流程文档
 - 与智能体协作相关的提示词、模板、脚本和经验总结
 
@@ -13,18 +14,21 @@
 
 ```text
 .
-├── AGENTS.md        # 用户级智能体指南，放稳定偏好、硬规则和资料索引
-├── skills/          # 跨 Codex / opencode 复用的 Skills
+├── AGENTS.md        # 仓库维护指南，说明如何维护 agent-lab
+├── .agents/
+│   ├── AGENTS.md    # 用户级智能体指南，放稳定偏好、硬规则和资料索引
+│   └── skills/      # 跨 Codex / opencode 复用的 Skills
 └── references/      # 可选：按主题拆分的详细参考文档
 ```
 
 ## 内容原则
 
-- `AGENTS.md` 保持精简，只放总是应该知道的规则、偏好和索引。
-- 详细流程放到单独文档中，再由 `AGENTS.md` 按触发条件引用。
+- 根目录 `AGENTS.md` 保持精简，只放维护本仓库时总是应该知道的规则。
+- `.agents/AGENTS.md` 存放用户级长期偏好和资料索引。
+- 详细流程放到单独文档中，再由对应的 `AGENTS.md` 按触发条件引用。
 - 适合同步的是人工整理过的配置、知识和流程。
 - 不要提交 token、密钥、认证文件、日志、会话记录或自动生成的本地记忆。
 
 ## 同步定位
 
-这个仓库可以作为公司电脑和家里电脑之间同步智能体配置与资料的源头。每台机器可以 clone 该仓库，并按需要把其中的 `AGENTS.md`、`skills` 等内容软链或复制到对应工具的配置目录。
+这个仓库可以作为公司电脑和家里电脑之间同步智能体配置与资料的源头。每台机器可以 clone 该仓库，并按需要把其中的 `.agents/AGENTS.md`、`.agents/skills` 等内容软链或复制到对应工具的配置目录。
